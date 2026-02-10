@@ -1,27 +1,9 @@
-<!-- # b_clone_twitter
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference. -->
-
-
 # 🐦 Twitter Login Page Clone (Flutter)
 
 Clone da tela inicial de autenticação do Twitter, desenvolvido com **Dart + Flutter**, com foco em estudo de layout, composição de widgets e fidelidade visual à interface original.
 
 <p align="center">
-  <img src="printTela.png" alt="Twitter Login Clone" width="300"/>
+  <img src="assets_clone_twitter_fase1/printTela.png" alt="Twitter Login Clone" width="300"/>
 </p>
 
 ---
@@ -45,7 +27,6 @@ Foi desenvolvido como exercício prático para:
 - Flutter
 - Dart
 - Material Design
-- Google Fonts *(opcional)*
 
 ---
 
@@ -67,3 +48,9 @@ A tela reproduz:
 1. Verifique se o Flutter está instalado:
    ```bash
    flutter --version
+   ```
+2. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repo.git
+   ```
+
