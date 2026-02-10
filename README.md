@@ -51,6 +51,34 @@ A tela reproduz:
    ```
 2. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repo.git
+   git clone https://github.com/PabloGarcia48/TwitterPage_GrowdevVesteTech_fase1.git
    ```
+3. Acesse a pasta do projeto:
+   ```bash
+   cd nome-do-repo
+   ```
+
+4. Instale as dependências:
+   ```bash
+   flutter pub get
+   ```
+
+5. Execute o aplicativo:
+   ```bash
+   flutter run
+   ```
+
+---
+## 📚 Aprendizados
+Durante o desenvolvimento deste projeto, foram praticados:
+ - Estruturação de layouts com Column, Row e Padding
+ - Uso de SafeArea
+ - Criação de botões customizados
+ - Organização de widgets reutilizáveis
+ - Fidelidade visual baseada em referência real
+
+---
+## 📄 Licença
+Este projeto é apenas para fins educacionais.
+Todos os direitos da marca Twitter/X pertencem aos seus respectivos proprietários.
 
