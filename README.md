@@ -1,6 +1,6 @@
-# 🐦 Twitter Login Page Clone (Flutter)
+# 🛒 Shopping List App (Flutter)
 
-Clone da tela inicial de autenticação do Twitter, desenvolvido com **Dart + Flutter**, com foco em estudo de layout, composição de widgets e fidelidade visual à interface original.
+Aplicativo de listas de compras, desenvolvido com **Dart + Flutter**, com foco em gerenciamento de estado, organização arquitetural e boas práticas na construção de aplicações.
 
 <p align="center">
   <img src="assets_clone_twitter_fase1/printTela.png" alt="Twitter Login Clone" width="300"/>
@@ -10,15 +10,15 @@ Clone da tela inicial de autenticação do Twitter, desenvolvido com **Dart + Fl
 
 ## 📱 Sobre o Projeto
 
-Este projeto tem como objetivo **reproduzir visualmente a tela de login do Twitter**, utilizando Flutter, respeitando espaçamentos, tipografia, cores e hierarquia visual.
+Este projeto tem como objetivo **permitir a criação e gerenciamento de múltiplas listas de compras** (ex: Mercado, Farmácia, etc.), cada uma contendo seus próprios itens.
 
-Foi desenvolvido como exercício prático para:
-- Aprimorar habilidades em **UI com Flutter**
-- Trabalhar com **widgets básicos e layout responsivo**
-- Treinar organização e estrutura de código
+O aplicativo foi desenvolvido como exercício prático para:
 
-> ⚠️ **Observação:** Este projeto é apenas um clone visual.  
-> Não possui integração com APIs, autenticação real ou funcionalidades do Twitter.
+- Trabalhar navegação entre telas
+- Aplicar separação de responsabilidades (UI vs Modelo)
+- Manipular listas dinâmicas
+- Implementar CRUD básico (Create, Read, Update, Delete)
+- Calcular valores e progresso dinamicamente
 
 ---
 
@@ -30,16 +30,52 @@ Foi desenvolvido como exercício prático para:
 
 ---
 
-## 📐 Layout
+## 📐 Funcionalidades Implementadas
 
-A tela reproduz:
-- Logo do Twitter centralizado
-- Texto principal com destaque tipográfico
-- Botões de login com:
-  - Google
-  - Apple
-- Botão de criação de conta
-- Links de termos e login
+📋 Listas Principais
+- Criação de múltiplas listas
+- Exibição de progresso por lista
+- Indicador visual com **LinearProgressIndicator**
+
+🧾 Itens da Lista
+- Adicionar novos itens via Bottom Sheet
+- Marcar/desmarcar itens (checkbox)
+- Cálculo automático de:
+   - Total de itens
+   - Itens concluídos
+   - Valor total marcado
+   - Valor total não marcado
+- Remover item com gesto de arrastar (Dismissible)
+
+🔄 Atualização de Progresso
+- Progresso recalculado dinamicamente
+- Navegação entre telas mantendo estado
+- Atualização automática ao retornar para a tela principal
+
+---
+
+## 🏗️ Estrutura Arquitetural
+
+O projeto foi estruturado com separação clara entre:
+
+📦 Modelos
+- MainList
+- ItemList
+
+Responsáveis por:
+- Armazenar estado
+- Regras de negócio
+- Cálculos derivados (getters)
+- Métodos como addItem, removeItem, toggleChecked
+
+🎨 UI
+- MainListPage
+- DetailListPage
+- ListCardWidget
+- ItemCardWidget
+- AddItem
+
+A UI apenas exibe dados e dispara eventos.
 
 ---
 
@@ -51,7 +87,7 @@ A tela reproduz:
    ```
 2. Clone o repositório:
    ```bash
-   git clone https://github.com/PabloGarcia48/TwitterPage_GrowdevVesteTech_fase1.git
+   git clone https://github.com/PabloGarcia48/ListaDeCompras_GrowdevVesteTech_fase2.git
    ```
 3. Acesse a pasta do projeto:
    ```bash
@@ -71,14 +107,15 @@ A tela reproduz:
 ---
 ## 📚 Aprendizados
 Durante o desenvolvimento deste projeto, foram praticados:
- - Estruturação de layouts com Column, Row e Padding
- - Uso de SafeArea
- - Criação de botões customizados
- - Organização de widgets reutilizáveis
- - Fidelidade visual baseada em referência real
+- Manipulação de listas dinâmicas
+- Uso correto de StatefulWidget e setState
+- Navegação com Navigator.push e Navigator.pop
+- Passagem de objetos entre telas
+- Separação de lógica de negócio dos widgets
+- Uso de Dismissible para remoção com gesto
+- Cálculos reativos usando getters
 
 ---
 ## 📄 Licença
-Este projeto é apenas para fins educacionais.
-Todos os direitos da marca Twitter/X pertencem aos seus respectivos proprietários.
+Este projeto foi desenvolvido para fins educacionais e de estudo em Flutter.
 
