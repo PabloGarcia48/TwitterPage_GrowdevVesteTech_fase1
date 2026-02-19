@@ -1,6 +1,6 @@
-# 🛒 Shopping List App (Flutter)
+# 🐦 Twitter Login Page Clone (Flutter)
 
-Aplicativo de listas de compras, desenvolvido com **Dart + Flutter**, com foco em gerenciamento de estado, organização arquitetural e boas práticas na construção de aplicações.
+Clone da tela inicial de autenticação do Twitter, desenvolvido com **Dart + Flutter**, com foco em estudo de layout, composição de widgets e fidelidade visual à interface original.
 
 <p align="center">
   <img src="assets_clone_twitter_fase1/printTela.png" alt="Twitter Login Clone" width="300"/>
@@ -10,15 +10,15 @@ Aplicativo de listas de compras, desenvolvido com **Dart + Flutter**, com foco e
 
 ## 📱 Sobre o Projeto
 
-Este projeto tem como objetivo **permitir a criação e gerenciamento de múltiplas listas de compras** (ex: Mercado, Farmácia, etc.), cada uma contendo seus próprios itens.
+Este projeto tem como objetivo **reproduzir visualmente a tela de login do Twitter**, utilizando Flutter, respeitando espaçamentos, tipografia, cores e hierarquia visual.
 
-O aplicativo foi desenvolvido como exercício prático para:
+Foi desenvolvido como exercício prático para:
+- Aprimorar habilidades em **UI com Flutter**
+- Trabalhar com **widgets básicos e layout responsivo**
+- Treinar organização e estrutura de código
 
-- Trabalhar navegação entre telas
-- Aplicar separação de responsabilidades (UI vs Modelo)
-- Manipular listas dinâmicas
-- Implementar CRUD básico (Create, Read, Update, Delete)
-- Calcular valores e progresso dinamicamente
+> ⚠️ **Observação:** Este projeto é apenas um clone visual.  
+> Não possui integração com APIs, autenticação real ou funcionalidades do Twitter.
 
 ---
 
@@ -30,52 +30,16 @@ O aplicativo foi desenvolvido como exercício prático para:
 
 ---
 
-## 📐 Funcionalidades Implementadas
+## 📐 Layout
 
-📋 Listas Principais
-- Criação de múltiplas listas
-- Exibição de progresso por lista
-- Indicador visual com **LinearProgressIndicator**
-
-🧾 Itens da Lista
-- Adicionar novos itens via Bottom Sheet
-- Marcar/desmarcar itens (checkbox)
-- Cálculo automático de:
-   - Total de itens
-   - Itens concluídos
-   - Valor total marcado
-   - Valor total não marcado
-- Remover item com gesto de arrastar (Dismissible)
-
-🔄 Atualização de Progresso
-- Progresso recalculado dinamicamente
-- Navegação entre telas mantendo estado
-- Atualização automática ao retornar para a tela principal
-
----
-
-## 🏗️ Estrutura Arquitetural
-
-O projeto foi estruturado com separação clara entre:
-
-📦 Modelos
-- MainList
-- ItemList
-
-Responsáveis por:
-- Armazenar estado
-- Regras de negócio
-- Cálculos derivados (getters)
-- Métodos como addItem, removeItem, toggleChecked
-
-🎨 UI
-- MainListPage
-- DetailListPage
-- ListCardWidget
-- ItemCardWidget
-- AddItem
-
-A UI apenas exibe dados e dispara eventos.
+A tela reproduz:
+- Logo do Twitter centralizado
+- Texto principal com destaque tipográfico
+- Botões de login com:
+  - Google
+  - Apple
+- Botão de criação de conta
+- Links de termos e login
 
 ---
 
@@ -87,7 +51,7 @@ A UI apenas exibe dados e dispara eventos.
    ```
 2. Clone o repositório:
    ```bash
-   git clone https://github.com/PabloGarcia48/ListaDeCompras_GrowdevVesteTech_fase2.git
+   git clone https://github.com/PabloGarcia48/TwitterPage_GrowdevVesteTech_fase1.git
    ```
 3. Acesse a pasta do projeto:
    ```bash
@@ -107,15 +71,14 @@ A UI apenas exibe dados e dispara eventos.
 ---
 ## 📚 Aprendizados
 Durante o desenvolvimento deste projeto, foram praticados:
-- Manipulação de listas dinâmicas
-- Uso correto de StatefulWidget e setState
-- Navegação com Navigator.push e Navigator.pop
-- Passagem de objetos entre telas
-- Separação de lógica de negócio dos widgets
-- Uso de Dismissible para remoção com gesto
-- Cálculos reativos usando getters
+ - Estruturação de layouts com Column, Row e Padding
+ - Uso de SafeArea
+ - Criação de botões customizados
+ - Organização de widgets reutilizáveis
+ - Fidelidade visual baseada em referência real
 
 ---
 ## 📄 Licença
-Este projeto foi desenvolvido para fins educacionais e de estudo em Flutter.
+Este projeto é apenas para fins educacionais.
+Todos os direitos da marca Twitter/X pertencem aos seus respectivos proprietários.
 
